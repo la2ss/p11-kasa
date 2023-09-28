@@ -1,0 +1,37 @@
+@forward "./Utils/mixins";
+
+//Utils other than variabls, maps and mixins
+@forward "./Utils/js-classes";
+@forward "./Utils/keyframes";
+
+
+//Base
+@forward "./Base/normalization";
+@forward "./Base/typography";
+
+//Pages
+@forward "./Pages/Error404";
+@forward "./Pages/Home";
+@forward "./Pages/About";
+@forward "./Pages/Logement";
+
+
+// Components
+@forward "./Components/Carousel";
+@forward "./Components/Card";
+@forward "./Components/Banner";
+@forward "./Components/Collapse";
+@forward "./Components/Carousel";
+@forward "./Components/Tag";
+@forward "./Components/Rate";
+@forward "./Components/Host";
+@forward "./Components/Navigation";
+
+//Layout 
+
+@forward "./Layout/Header";
+@forward "./Layout/Footer";
+
+
+
+

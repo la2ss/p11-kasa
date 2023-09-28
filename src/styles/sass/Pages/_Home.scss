@@ -1,0 +1,28 @@
+@use "../Utils/" as *;
+
+/*--------------------------------------------------------------
+# Home page
+--------------------------------------------------------------*/
+
+.banner {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    h1 {
+        position: absolute;
+        color: white;
+        z-index: 10;
+        font-size: 48px;
+        line-height: 68px;
+        top: 50%;
+        transform: translate(0%, -50%);
+    }
+
+    &__img {
+        position: relative;
+        width: 100%;
+        border-radius: 25px;
+    }
+}
+

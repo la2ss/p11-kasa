@@ -1,0 +1,93 @@
+//Given the fact that @import is deprecated → must use @use and @forward instead
+@use "../Utils/" as *;
+
+//Removes ANY animation if the user has the reduced motion option enabled in their device
+@media (prefers-reduced-motion) {
+
+    *,
+    :before,
+    ::after {
+        -webkit-animation: none !important;
+        animation: none !important;
+
+        transition: none !important;
+    }
+}
+
+//Selection
+*::-moz-selection {
+    background-color: var(--selection-bg-color);
+    color: var(--selection-color);
+}
+
+*::selection {
+    background-color: var(--selection-bg-color);
+    color: var(--selection-color);
+}
+
+
+//Reset
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 10vmax;
+}
+
+body {
+    background-color: var(--page-bg-color);
+    color: var(--text-color-primary);
+
+
+    min-height: 100vh;
+
+    overflow-x: hidden;
+
+    transition: background-color 350ms ease-out,
+        color 350ms ease-out;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+
+    &:visited {
+        color: var(--text-color-primary);
+        text-decoration: none;
+    }
+}
+
+main {
+    margin: 0 5%;
+}
+
+button {
+    border: none;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+label {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+img {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

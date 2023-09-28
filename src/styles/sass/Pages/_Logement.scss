@@ -1,0 +1,14 @@
+@use "../Utils/" as *;
+
+
+.collapse-fiche-container {
+
+  display: flex; /* Set the container as a flex container */
+  width: 100%;
+  
+  .description,
+  .equipement {
+    width: 582px!important;
+   
+  }
+}
