@@ -61,7 +61,8 @@
     @media screen and (min-width: $breakpoint-desktop) {
         gap: 50px;
         padding: 5% 1%;
-        background-color: #f7f7f7;
+      //  background-color: #f7f7f7;
+      background-color: red;
         @include big-radius;
         margin: 43px 0;
     }

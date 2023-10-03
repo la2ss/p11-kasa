@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { Context } from "../../service/Context";
 
 export default function Home() {
-	const logements = useContext(Context); // Accessing the logements data from context
+	const logements = useContext(Context); // Acces au logements depuis context
 
 	return (
 		<>

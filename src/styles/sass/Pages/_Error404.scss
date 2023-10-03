@@ -1,16 +1,20 @@
 @use "../Utils/" as *;
 
 .error-404 {
+    color: var(--text-color-primary);
     @include center-flex-column(75px);
+    
 
     &__text {
         text-align: center;
+      
     }
 
 
     &__title {
         font-weight: 700;
         font-size: 288px;
+       
 
         @include mobile-only {
             font-size: 96px;
